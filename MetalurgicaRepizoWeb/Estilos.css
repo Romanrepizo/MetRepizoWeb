@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+header{
+    background-image: linear-gradient( 96.5deg,  rgb(43, 71, 37) 10.4%, rgb(178, 209, 182) 87.7% );
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    align-self: center;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+a:visited{
+    color: black;
+}
+
+.carouselImagen{
+    height: 500px;
+    align-items: center;
+}
+
+.carousel-inner{
+    margin-top: 20px;
+    width: 100%;
+    height: 500px
+}
+fieldset{
+    border: solid 2px black;
+    width: 600px;
+    height: auto;
+}
+.campoTextoContacto{
+    resize: none;
+
+}
+
+.btn-resetear {
+    padding: 10px;
+}
+
+.btn-hecho {
+    padding: 10px;
+}
+.logoHeader{
+    width: 240px;
+    height: 60px;
+}
+
+footer{
+    display: grid;
+    grid-template-areas: 
+    "logo textoLogo listado ubicacion"
+    "firma firma firma firma";
+    height: auto;
+    background-color:rgba(34, 32, 32, 0.781) ;
+}
+.datosFooter{
+    border: solid black 4px;
+    grid-area: ubicacion;
+}
+.imagen__footer--centrar{
+    display: flex;
+    align-items: center;
+    grid-area: logo;
+}
+.imagen__footer{
+    width: 300px;
+    height: 100px;
+}
+.listadoFooter{
+}
+.informacionFirma{
+grid-area: firma;
+background-color: rgb(20, 20, 20);
+color: white;
+height: 30px;
+display:grid;
+align-items:end;
+margin:0%;
+}
+.listadoFooter a:link{
+    font-size: 15px;
+}
+.textoFooter{
+    width: 200px;
+    height: auto;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    grid-area: textoLogo;
+}

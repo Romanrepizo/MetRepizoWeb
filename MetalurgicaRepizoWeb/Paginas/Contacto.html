@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../Estilos.css">
+    <title>Metalurgica Repizo SRL.</title>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../estilos.js"></script>
+</head>
+<body>
+    <header>    
+        <div class="imagenCabecera d-flex justify-content-center">
+            <a href="../index.html">
+                <img class="logoHeader" src="../IMAGENES/LOGOTIPO METALURGICA REPIZO -PNG.png" alt="Logotipo Metalurgica Repizo">
+            </a>
+        </div>
+
+        <div class= "navBar">       
+            <ul class=" d-flex justify-content-around align-items-center">
+                <li class="d-flex flex-row justify-content-between">
+                    <a href="./Paginas/Productos.html">Productos</a>
+                </li>
+                <li class="d-flex flex-row justify-content-between">
+                    <a href="./Paginas/Servicios.html">Servicios</a>
+                </li>
+                <li class="d-flex flex-row justify-content-between">
+                    <a href="./Paginas/Empresa.html">Empresa</a>
+                </li>
+                <li class="d-flex flex-row justify-content-between">
+                    <a href="./Paginas/Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main> 
+        <div class="container-fluid px-1 py-5 mx-auto ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center formulario">
+                    <h3>Contactanos!</h3>
+                    <p class="blue-text">Brindanos tus datos.
+                        <br> Te estaremos contactando a la brevedad.
+                    </p>
+                    <div class="card">
+                        <h5 class="text-center mb-4">Informacion de contacto.</h5>
+                        <form class="form-card" onsubmit="event.preventDefault()">
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label class="form-control-label px-3">Nombre y Apellido.<span class="text-danger">*</span>
+                                    </label><input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="validate(1)">
+                                </div>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label class="form-control-label px-3">Razon social.<span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="validate(2)">
+                                </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label class="form-control-label px-3">Correo Electronico.<span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="email" name="email" placeholder="Nombre@ejemplo.com" onblur="validate(3)">
+                                </div>
+                                <div class="form-group col-sm-6 flex-column d-flex">
+                                    <label class="form-control-label px-3">Telefono<span class="text-danger"> *</span>
+                                    </label>
+                                    <input type="text" id="mob" name="mob" placeholder=" Sin 0 y sin 15" onblur="validate(4)">
+                                </div>
+                            </div>
+                            <div class="row justify-content-between text-left">
+                            </div>
+                            <div class="row justify-content-between text-left">
+                                <div class="form-group col-12 flex-column d-flex">
+                                    <label class="form-control-label px-3">Cuentanos en motivo de tu consulta:<span class="text-danger">*</span>
+                                    </label>
+                                    <textarea class="campoTextoContacto" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div class="btn-hecho form-group col-sm-2">
+                                    <button type="submit" class="btn-block btn-primary">Hecho</button>
+                                </div>
+                                <div class="btn-resetear form-group col-sm-2">
+                                    <button type="reset" class="btn-block btn-primary">Resetear</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="imagen__footer--centrar">
+            <img class="imagen__footer" src="./IMAGENES/LOGOTIPO METALURGICA REPIZO -PNG.png" alt="Logotipo Metalurgica Repizo">
+        </div>
+        <div class="textoFooter">
+            <p>Desde 1991, transformamos el acero en soluciones.</p>
+        </div>
+        <div class="listadoFooter">
+            <ul>Listado de Links
+                <li>
+                    <a href="./Paginas/Productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="./Paginas/Servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="./Paginas/Empresa.html">Empresa</a>
+                </li>
+                <li>
+                    <a href="./Paginas/Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="datosFooter">
+            <p>infromacion de locacion - numero de telefono - horarios de apertura y cierre </p>
+        </div>
+    </div>
+        <div class="informacionFirma">
+            <p><strong> Román Alan Repizo - General Deheza, Cordoba, Argentina </strong></p>
+    </div>
+</footer>
+</body>
+</html>
